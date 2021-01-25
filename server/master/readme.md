@@ -1,6 +1,7 @@
 # VM specifikation
 Maskinen har følgende diske:
-- disk_1: 40G (root partition)
+- disk_1: 40G
+  - root partition, mountpoint: /
 
 # Installer Ubuntu 20.04
 
@@ -31,12 +32,12 @@ Vi benytter standard mirror som foreslået.
 
 ## Setup storage
 Vi har kun en enkelt disk i master serveren, så vi benytter automatisk opsætning af LVM for hele disken.
-Vi skal blot lige ændre størrelsen, så hele diskens bruges.
+Vi skal blot lige ændre størrelsen, så hele disken bruges.
 
 [![](../../video/gif/disk_master.gif)]
 
 ## Setup profile
-Konfigurering af default bruger, der har sudo rettigheder, og server navn
+Konfigurering af default bruger, der har sudo rettigheder, og serverens hostname.
 
 [![](../../video/gif/profile_master.gif)]
 
@@ -46,6 +47,6 @@ Vi vil gerne have installeret SSH server
 [![](../../video/gif/ssh.gif)]
 
 ## Installation
-Herefter kører installationsprocessen, og herefter rebootes maskinen
+Herefter kører installationsprocessen, og når den er færdig genstarter vi maskinen.
 
 [![](../../video/gif/install_complete.gif)]
