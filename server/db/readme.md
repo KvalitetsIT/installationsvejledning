@@ -4,7 +4,9 @@ Maskinen har følgende diske:
   - root partition, mountpoint: /
 - disk_2: 40G
   - data partition til database, mountpoint: /data
-
+- disk_3: 60G
+  - data partition til database backup, mountpoint: /backup
+  
 # Installer Ubuntu 20.04
 
 ## Vælg sprog
@@ -12,7 +14,7 @@ Vi vælger Engelsk som standard
 
 [![](../../video/gif/language.gif)]
 
-## Setup keyboard
+## Setup keyboardmountpoint: /data
 Vi vælger Dansk som standard.
 
 [![](../../video/gif/keyboard.gif)]
